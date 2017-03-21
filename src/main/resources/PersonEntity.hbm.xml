@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.gc.models.PersonEntity" table="person" schema="pss">
+        <id name="name">
+            <column name="Name" sql-type="varchar(50)" length="50"/>
+        </id>
+        <property name="address">
+            <column name="Address" sql-type="varchar(70)" length="70"/>
+        </property>
+    </class>
+</hibernate-mapping>

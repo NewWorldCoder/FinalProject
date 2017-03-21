@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.gc.models.StudentEntity" table="student" schema="pss">
+        <id name="studentId">
+            <column name="StudentID" sql-type="int(11)"/>
+        </id>
+        <property name="name">
+            <column name="Name" sql-type="varchar(50)" length="50"/>
+        </property>
+        <property name="address">
+            <column name="Address" sql-type="varchar(70)" length="70"/>
+        </property>
+        <property name="program">
+            <column name="Program" sql-type="varchar(50)" length="50"/>
+        </property>
+        <property name="year">
+            <column name="Year" sql-type="varchar(4)" length="4"/>
+        </property>
+        <property name="fee">
+            <column name="Fee" sql-type="decimal(10,2)" precision="10" scale="2"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.gc.models.StaffEntity" table="staff" schema="pss">
+        <id name="staffId">
+            <column name="StaffID" sql-type="int(11)"/>
+        </id>
+        <property name="name">
+            <column name="Name" sql-type="varchar(50)" length="50"/>
+        </property>
+        <property name="address">
+            <column name="Address" sql-type="varchar(70)" length="70"/>
+        </property>
+        <property name="school">
+            <column name="School" sql-type="varchar(70)" length="70"/>
+        </property>
+        <property name="monthlySalary">
+            <column name="MonthlySalary" sql-type="decimal(10,2)" precision="10" scale="2"/>
+        </property>
+    </class>
+</hibernate-mapping>
